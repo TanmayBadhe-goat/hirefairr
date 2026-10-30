@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Machine Learning Engineer with 4 years of experience building and deploying ML models. Designed pipelines using scikit-learn and TensorFlow. Deployed models to production using Docker and FastAPI. Built data preprocessing pipelines and feature engineering. Monitored model drift and retraining schedules.",
+    "role": "machine_learning_engineer"
+  },
+  {
+    "text": "ML Engineer specializing in deep learning and neural networks. Built image classification models using PyTorch. Deployed models using Kubernetes and Sagemaker. Created data augmentation pipelines and hyperparameter tuning. Monitored model performance and A/B tested different architectures.",
+    "role": "machine_learning_engineer"
+  },
+  {
+    "text": "Artificial Intelligence Engineer experienced with NLP and transformers. Built sentiment analysis models using BERT and GPT. Deployed APIs using FastAPI and Docker. Created data preprocessing pipelines for text data. Researched new ML algorithms and implemented proof-of-concept prototypes.",
+    "role": "machine_learning_engineer"
+  }
+]

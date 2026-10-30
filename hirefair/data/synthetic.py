@@ -124,6 +124,59 @@ ROLE_CONTENT: dict[str, RoleContent] = {
         teams=("cricket", "debating", "rowing", "tennis", "hockey", "swimming"),
         councils=("surgical", "clinical governance", "medical education", "quality", "research", "hospital"),
     ),
+    "data_analyst": RoleContent(
+        role_label="data analyst",
+        skills=(
+            "SQL", "Python", "statistics", "data visualization", "Excel",
+            "pandas", "data cleaning", "reports", "ETL", "business intelligence",
+        ),
+        employers=(
+            "a fintech startup", "a retail analytics team", "a healthcare analytics unit",
+            "a marketing agency", "a logistics company", "an e-commerce platform",
+        ),
+        achievements=(
+            "built a dashboard that reduced reporting time by 40 percent",
+            "cleaned and structured a 2-million-row dataset",
+            "created an interactive Tableau story for executive stakeholders",
+            "optimized a SQL query cutting runtime from 10min to 45sec",
+            "designed an A/B test that improved conversion by 12 percent",
+            "automated monthly reporting saving 20 analyst-hours per cycle",
+        ),
+        educations=(
+            "a BSc in Mathematics", "a BSc in Statistics", "a BA in Economics",
+            "a Masters in Data Science", "a Masters in Business Analytics",
+            "a BSc in Computer Science", "an Associate Degree in Data Analysis",
+        ),
+        teams=("cricket", "debating", "rowing", "volleyball", "badminton", "athletics"),
+        councils=("analytics", "data", "insights", "business intelligence", "reporting"),
+    ),
+    "machine_learning_engineer": RoleContent(
+        role_label="machine learning engineer",
+        skills=(
+            "Python", "PyTorch", "TensorFlow", "scikit-learn", "Keras",
+            "model deployment", "MLOps", "data pipelines", "feature engineering",
+            "hyperparameter tuning", "A/B testing", "distributed training",
+        ),
+        employers=(
+            "an AI research lab", "a recommendation system team", "a computer vision startup",
+            "a natural language processing team", "a fintech AI unit", "a health AI lab",
+        ),
+        achievements=(
+            "trained an image classification model achieving 95 percent top-1 accuracy",
+            "deployed a real-time recommendation service handling 10k QPS",
+            "built an NER pipeline extracting entities from clinical notes",
+            "optimized hyperparameters reducing training time by 35 percent",
+            "implemented CI/CD for model retraining every two weeks",
+            "reduced inference latency by 50 percent through model quantization",
+        ),
+        educations=(
+            "a MSc in Machine Learning", "a MSc in Artificial Intelligence",
+            "a BSc in Computer Science", "a BSc in Data Science",
+            "a PhD in Machine Learning", "an MS in Data Engineering",
+        ),
+        teams=("cricket", "debating", "rowing", "volleyball", "badminton", "athletics"),
+        councils=("ml", "ai", "r&d", "experimentation", "innovation"),
+    ),
 }
 
 # Verb slots are part of the cue set so the neutral rendering (singular they)

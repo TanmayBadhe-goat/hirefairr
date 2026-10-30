@@ -24,7 +24,15 @@ from hirefair.utils import PROJECT_ROOT, get_logger, read_json, read_jsonl
 
 LOGGER = get_logger()
 
-ROLES = ("software_engineer", "nurse", "surgeon")
+#: Roles with checkpoints in ``results/`` (Bias in Bios audit) plus the roles of
+#: the resume analyzer, whose checkpoints live in ``results/hirefair2/``.
+ROLES = (
+    "software_engineer",
+    "nurse",
+    "surgeon",
+    "data_analyst",
+    "machine_learning_engineer",
+)
 DEMO_VARIANTS = ("B0", "B1", "B3")
 TOP_K = 10
 
@@ -144,8 +152,15 @@ def _to_html(text: str, spans: list[tuple[int, int]]) -> str:
     return "".join(pieces).replace("\n", "<br>")
 
 
+def _mean(frame: pd.DataFrame, column: str) -> float:
+    """Mean of a summary column, ``NaN`` when the column or values are absent."""
+    if column not in frame.columns:
+        return float("nan")
+    return float(pd.to_numeric(frame[column], errors="coerce").mean())
+
+
 def aggregate(role: str, results_dir: str | Path | None = None) -> dict[str, dict[str, float]]:
-    """Mean flip rate and score delta per model, read from summary.csv."""
+    """Per-model means read from summary.csv (task, fairness and counterfactual)."""
     root = _resolve(results_dir, PROJECT_ROOT / "results")
     path = root / "summary.csv"
     if not path.exists():
@@ -154,15 +169,27 @@ def aggregate(role: str, results_dir: str | Path | None = None) -> dict[str, dic
     frame = frame[(frame["role"] == role) & (frame["variant"].isin(DEMO_VARIANTS))]
     out: dict[str, dict[str, float]] = {}
     for variant, group in frame.groupby("variant"):
-        out[variant] = {
-            "flip_rate": float(pd.to_numeric(group["flip_rate"], errors="coerce").mean()),
-            "mean_abs_score_delta": float(
-                pd.to_numeric(group["mean_abs_score_delta"], errors="coerce").mean()
-            ),
-            "f1": float(pd.to_numeric(group["f1"], errors="coerce").mean()),
-            "eod_abs": float(pd.to_numeric(group["eod_abs"], errors="coerce").mean()),
-            "seeds": float(group["seed"].nunique()),
+        values = {
+            column: _mean(group, column)
+            for column in (
+                "flip_rate",
+                "mean_abs_score_delta",
+                "f1",
+                "accuracy",
+                "precision",
+                "recall",
+                "roc_auc",
+                "sr_m",
+                "sr_f",
+                "dpd",
+                "tpr_m",
+                "tpr_f",
+                "eod",
+                "eod_abs",
+            )
         }
+        values["seeds"] = float(group["seed"].nunique())
+        out[variant] = values
     return out
 
 

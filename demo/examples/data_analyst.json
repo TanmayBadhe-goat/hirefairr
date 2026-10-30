@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Data Analyst with 3 years of experience in business intelligence and reporting. Created interactive dashboards using Tableau and PowerBI. Analyzed large datasets using SQL and Python pandas. Built automated data pipelines for daily reporting. Presented findings to stakeholders to inform business decisions.",
+    "role": "data_analyst"
+  },
+  {
+    "text": "Senior Data Analyst experienced in data visualization and statistical analysis. Built dashboards using Tableau and Looker. Performed complex queries using SQL and data cleaning using Python. Created ETL processes for cleaning and transforming raw data. Used statistical models to identify trends and patterns.",
+    "role": "data_analyst"
+  },
+  {
+    "text": "Data Analyst specialist in Excel advanced functions and SQL querying. Created financial models and forecasts using Excel and Python. Analyzed customer behavior data to identify growth opportunities. Built reporting dashboards using PowerBI. Presented quarterly business reviews to executive team.",
+    "role": "data_analyst"
+  }
+]

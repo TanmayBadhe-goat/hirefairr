@@ -15,3 +15,6 @@ spacy==3.8.11
 # https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
 fpdf2==2.8.5
 pytest==8.4.2
+# Resume upload parsing for the HireFair 2.0 Gradio app (PDF and DOCX).
+pymupdf==1.26.7
+python-docx==1.2.0

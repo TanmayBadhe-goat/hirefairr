@@ -1,0 +1,27 @@
+{
+  "role": "machine_learning_engineer",
+  "source": [
+    "data/synthetic/software_engineer.jsonl",
+    "data/synthetic/data_analyst.jsonl",
+    "data/synthetic/machine_learning_engineer.jsonl"
+  ],
+  "vocab_size": 963,
+  "max_len": 128,
+  "seed": 42,
+  "counts": {
+    "train": 2100,
+    "val": 450,
+    "test": 450
+  },
+  "positive_rates": {
+    "train": 0.3333333333333333,
+    "val": 0.3333333333333333,
+    "test": 0.3333333333333333
+  },
+  "female_share": {
+    "train": 0.5,
+    "val": 0.5,
+    "test": 0.5
+  },
+  "note": "Track B synthetic resume summaries; y=1 for the target role and 0 for the other two demo roles. Bias in Bios has no data_analyst or machine_learning_engineer label."
+}

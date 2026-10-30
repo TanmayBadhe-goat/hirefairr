@@ -145,8 +145,23 @@ class Trainer:
 
     # -------------------------------------------------------------- training
 
-    def fit(self, train_arrays: SplitArrays, val_arrays: SplitArrays) -> TrainerResult:
-        """Train, then restore the selected epoch's weights."""
+    def fit(
+        self,
+        train_arrays: SplitArrays,
+        val_arrays: SplitArrays,
+        select: str = "fairness",
+    ) -> TrainerResult:
+        """Train, then restore the selected epoch's weights.
+
+        ``select="fairness"`` applies the spec's audit rule (lowest val TPR gap
+        among epochs within 2 F1 points of the best). ``select="final"`` keeps
+        the last epoch instead, which the resume demo uses so its probabilities
+        are calibrated rather than taken from the first epoch that already fits
+        the training distribution.
+        """
+        if select not in {"fairness", "final"}:
+            raise ValueError("select must be 'fairness' or 'final'")
+        self._select = select
         cfg = self.cfg
         train_loader = make_loader(
             train_arrays, cfg.train.batch, shuffle=True, seed=cfg.seed, num_workers=cfg.train.num_workers
@@ -262,20 +277,27 @@ class Trainer:
 
         result.best_val_f1 = best_f1
         eligible = [r for r in result.history if r["val_f1"] >= best_f1 - F1_TOLERANCE]
-        ranked = sorted(
-            eligible,
-            key=lambda r: (
-                float(np.nan_to_num(r["val_eod_abs"], nan=float("inf"))),
-                r["epoch"],
-            ),
-        )
-        selected = ranked[0]
+        if select == "final":
+            selected = result.history[-1]
+            result.selection_note = (
+                f"selected final epoch {selected['epoch']} of {len(result.history)} "
+                f"(val F1 {selected['val_f1']:.4f}, best {best_f1:.4f})"
+            )
+        else:
+            ranked = sorted(
+                eligible,
+                key=lambda r: (
+                    float(np.nan_to_num(r["val_eod_abs"], nan=float("inf"))),
+                    r["epoch"],
+                ),
+            )
+            selected = ranked[0]
+            result.selection_note = (
+                f"selected epoch {selected['epoch']} among {len(eligible)} within "
+                f"{F1_TOLERANCE:.2f} F1 of best {best_f1:.4f}, lowest val |TPR gap| "
+                f"{selected['val_eod_abs']:.4f}"
+            )
         result.selected_epoch = int(selected["epoch"])
-        result.selection_note = (
-            f"selected epoch {result.selected_epoch} among {len(eligible)} within "
-            f"{F1_TOLERANCE:.2f} F1 of best {best_f1:.4f}, lowest val |TPR gap| "
-            f"{selected['val_eod_abs']:.4f}"
-        )
         self.model.load_state_dict(states[result.selected_epoch])
         self.model.set_lambda(0.0)
 

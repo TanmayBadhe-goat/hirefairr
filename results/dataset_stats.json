@@ -1,0 +1,44 @@
+[
+  {
+    "role": "software_engineer",
+    "n_total": 31918,
+    "n_train": 11974,
+    "n_val": 9973,
+    "n_test": 9971,
+    "positive_rate": 0.017388307538066295,
+    "positive_rate_M": 0.027195072345865535,
+    "positive_rate_F": 0.005914746073832348,
+    "female_share_of_positives": 0.15675675675675677,
+    "male_share_of_positives": 0.8432432432432433,
+    "mean_tokens": 30.89563882448775,
+    "median_tokens": 24.0
+  },
+  {
+    "role": "nurse",
+    "n_total": 31918,
+    "n_train": 11974,
+    "n_val": 9973,
+    "n_test": 9971,
+    "positive_rate": 0.04784134344257159,
+    "positive_rate_M": 0.008019059794293683,
+    "positive_rate_F": 0.09443198042015093,
+    "female_share_of_positives": 0.9096267190569745,
+    "male_share_of_positives": 0.09037328094302555,
+    "mean_tokens": 30.89563882448775,
+    "median_tokens": 24.0
+  },
+  {
+    "role": "surgeon",
+    "n_total": 31918,
+    "n_train": 11974,
+    "n_val": 9973,
+    "n_test": 9971,
+    "positive_rate": 0.03427533053449464,
+    "positive_rate_M": 0.054273926433842754,
+    "positive_rate_F": 0.010877693928887076,
+    "female_share_of_positives": 0.14625228519195613,
+    "male_share_of_positives": 0.8537477148080439,
+    "mean_tokens": 30.89563882448775,
+    "median_tokens": 24.0
+  }
+]

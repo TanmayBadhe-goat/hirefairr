@@ -1,0 +1,5 @@
+role: nurse
+variant: B1
+adv:
+  mode: none
+  lambda_max: 1.0

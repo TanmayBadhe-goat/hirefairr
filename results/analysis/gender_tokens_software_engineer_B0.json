@@ -1,0 +1,1194 @@
+{
+  "role": "software_engineer",
+  "variant": "B0",
+  "seed": 0,
+  "vocab_size": 1372,
+  "n_tokens_male": 191742,
+  "n_tokens_female": 152901,
+  "log_odds": {
+    "female": [
+      {
+        "token": "she",
+        "z": 21.42880126462112,
+        "count_f": 4268.0,
+        "count_m": 0.0
+      },
+      {
+        "token": "her",
+        "z": 16.85916561365137,
+        "count_f": 2651.0,
+        "count_m": 0.0
+      },
+      {
+        "token": "honors",
+        "z": 11.520468910364121,
+        "count_f": 329.0,
+        "count_m": 121.0
+      },
+      {
+        "token": "with",
+        "z": 10.692349066757837,
+        "count_f": 1641.0,
+        "count_m": 1395.0
+      },
+      {
+        "token": "specializes",
+        "z": 10.460593442985866,
+        "count_f": 385.0,
+        "count_m": 191.0
+      },
+      {
+        "token": "ms",
+        "z": 10.253166329944936,
+        "count_f": 984.0,
+        "count_m": 0.0
+      },
+      {
+        "token": "graduated",
+        "z": 9.125752902571271,
+        "count_f": 438.0,
+        "count_m": 271.0
+      },
+      {
+        "token": "speaks",
+        "z": 8.76589993027241,
+        "count_f": 216.0,
+        "count_m": 90.0
+      },
+      {
+        "token": "women",
+        "z": 8.678798111124904,
+        "count_f": 145.0,
+        "count_m": 8.0
+      },
+      {
+        "token": "health",
+        "z": 8.38307862382082,
+        "count_f": 468.0,
+        "count_m": 319.0
+      },
+      {
+        "token": "children",
+        "z": 8.035328375711144,
+        "count_f": 159.0,
+        "count_m": 58.0
+      },
+      {
+        "token": "medicine",
+        "z": 8.00224887509411,
+        "count_f": 687.0,
+        "count_m": 544.0
+      },
+      {
+        "token": "spanish",
+        "z": 7.805190439686777,
+        "count_f": 226.0,
+        "count_m": 116.0
+      },
+      {
+        "token": "nursing",
+        "z": 7.76628062183166,
+        "count_f": 106.0,
+        "count_m": 20.0
+      },
+      {
+        "token": "english",
+        "z": 7.593951825170763,
+        "count_f": 270.0,
+        "count_m": 158.0
+      },
+      {
+        "token": "in",
+        "z": 7.353144819911771,
+        "count_f": 5558.0,
+        "count_m": 6093.0
+      },
+      {
+        "token": "practices",
+        "z": 6.920113671922229,
+        "count_f": 491.0,
+        "count_m": 384.0
+      },
+      {
+        "token": "nutrition",
+        "z": 6.789757793917013,
+        "count_f": 78.0,
+        "count_m": 9.0
+      },
+      {
+        "token": "family",
+        "z": 6.772169457270139,
+        "count_f": 214.0,
+        "count_m": 125.0
+      },
+      {
+        "token": "psychology",
+        "z": 6.426326493896938,
+        "count_f": 169.0,
+        "count_m": 92.0
+      },
+      {
+        "token": "education",
+        "z": 6.397991307489264,
+        "count_f": 260.0,
+        "count_m": 174.0
+      },
+      {
+        "token": "listed",
+        "z": 6.110980449084272,
+        "count_f": 142.0,
+        "count_m": 74.0
+      },
+      {
+        "token": "nurse",
+        "z": 6.058544627156402,
+        "count_f": 70.0,
+        "count_m": 4.0
+      },
+      {
+        "token": "npi",
+        "z": 5.971724359978782,
+        "count_f": 136.0,
+        "count_m": 71.0
+      },
+      {
+        "token": "care",
+        "z": 5.856015383013025,
+        "count_f": 217.0,
+        "count_m": 145.0
+      },
+      {
+        "token": "location",
+        "z": 5.802322097776813,
+        "count_f": 120.0,
+        "count_m": 60.0
+      },
+      {
+        "token": "affiliated",
+        "z": 5.712600197755896,
+        "count_f": 354.0,
+        "count_m": 281.0
+      },
+      {
+        "token": "hospital",
+        "z": 5.703921403012397,
+        "count_f": 529.0,
+        "count_m": 461.0
+      },
+      {
+        "token": "gender",
+        "z": 5.1938707750648545,
+        "count_f": 52.0,
+        "count_m": 13.0
+      },
+      {
+        "token": "social",
+        "z": 4.93454883039187,
+        "count_f": 216.0,
+        "count_m": 162.0
+      },
+      {
+        "token": "families",
+        "z": 4.826895353502199,
+        "count_f": 51.0,
+        "count_m": 16.0
+      },
+      {
+        "token": "saint",
+        "z": 4.725300044801718,
+        "count_f": 75.0,
+        "count_m": 36.0
+      },
+      {
+        "token": "adults",
+        "z": 4.689014134256134,
+        "count_f": 48.0,
+        "count_m": 15.0
+      },
+      {
+        "token": "practitioner",
+        "z": 4.677508587916282,
+        "count_f": 44.0,
+        "count_m": 12.0
+      },
+      {
+        "token": "literacy",
+        "z": 4.349689288943097,
+        "count_f": 34.0,
+        "count_m": 7.0
+      },
+      {
+        "token": "\u2019",
+        "z": 4.349674596707568,
+        "count_f": 608.0,
+        "count_m": 593.0
+      },
+      {
+        "token": "bachelor",
+        "z": 4.339603949575464,
+        "count_f": 112.0,
+        "count_m": 73.0
+      },
+      {
+        "token": "child",
+        "z": 4.271764933811341,
+        "count_f": 62.0,
+        "count_m": 30.0
+      },
+      {
+        "token": "pediatrics",
+        "z": 4.233555268304874,
+        "count_f": 35.0,
+        "count_m": 9.0
+      },
+      {
+        "token": "chronic",
+        "z": 4.118315700466545,
+        "count_f": 35.0,
+        "count_m": 10.0
+      },
+      {
+        "token": "gynecology",
+        "z": 3.991455431145483,
+        "count_f": 29.0,
+        "count_m": 2.0
+      },
+      {
+        "token": "registry",
+        "z": 3.9808700308334357,
+        "count_f": 68.0,
+        "count_m": 38.0
+      },
+      {
+        "token": "#",
+        "z": 3.879982583043554,
+        "count_f": 77.0,
+        "count_m": 47.0
+      },
+      {
+        "token": "writing",
+        "z": 3.868951244300705,
+        "count_f": 89.0,
+        "count_m": 58.0
+      },
+      {
+        "token": "mental",
+        "z": 3.8579698581230533,
+        "count_f": 50.0,
+        "count_m": 24.0
+      },
+      {
+        "token": "via",
+        "z": 3.8501257275176024,
+        "count_f": 71.0,
+        "count_m": 42.0
+      },
+      {
+        "token": "teaching",
+        "z": 3.840307598183004,
+        "count_f": 166.0,
+        "count_m": 133.0
+      },
+      {
+        "token": "yoga",
+        "z": 3.827961369933721,
+        "count_f": 41.0,
+        "count_m": 17.0
+      },
+      {
+        "token": "childrens",
+        "z": 3.8236808551378374,
+        "count_f": 25.0,
+        "count_m": 4.0
+      },
+      {
+        "token": "husband",
+        "z": 3.822634647229917,
+        "count_f": 26.0,
+        "count_m": 2.0
+      }
+    ],
+    "male": [
+      {
+        "token": "he",
+        "z": -22.335769584943474,
+        "count_f": 0.0,
+        "count_m": 5405.0
+      },
+      {
+        "token": "his",
+        "z": -17.213091103916,
+        "count_f": 0.0,
+        "count_m": 3223.0
+      },
+      {
+        "token": "blue",
+        "z": -10.420091637125719,
+        "count_f": 144.0,
+        "count_m": 486.0
+      },
+      {
+        "token": "dr",
+        "z": -9.153716810709373,
+        "count_f": 547.0,
+        "count_m": 1107.0
+      },
+      {
+        "token": "insurance",
+        "z": -8.26788342310605,
+        "count_f": 69.0,
+        "count_m": 265.0
+      },
+      {
+        "token": "shield",
+        "z": -7.378584563660712,
+        "count_f": 67.0,
+        "count_m": 234.0
+      },
+      {
+        "token": "of",
+        "z": -6.875283426738178,
+        "count_f": 4645.0,
+        "count_m": 6632.0
+      },
+      {
+        "token": "cross",
+        "z": -6.831382203157214,
+        "count_f": 77.0,
+        "count_m": 237.0
+      },
+      {
+        "token": "surgery",
+        "z": -6.716189161886544,
+        "count_f": 105.0,
+        "count_m": 284.0
+      },
+      {
+        "token": "accepts",
+        "z": -6.488830929677584,
+        "count_f": 15.0,
+        "count_m": 112.0
+      },
+      {
+        "token": "mr",
+        "z": -6.2858536088278685,
+        "count_f": 0.0,
+        "count_m": 432.0
+      },
+      {
+        "token": "5",
+        "z": -6.1918456021852055,
+        "count_f": 80.0,
+        "count_m": 225.0
+      },
+      {
+        "token": "software",
+        "z": -5.950815539114917,
+        "count_f": 11.0,
+        "count_m": 92.0
+      },
+      {
+        "token": "systems",
+        "z": -5.906868077786421,
+        "count_f": 58.0,
+        "count_m": 178.0
+      },
+      {
+        "token": "aetna",
+        "z": -5.412876128525375,
+        "count_f": 9.0,
+        "count_m": 76.0
+      },
+      {
+        "token": "engineering",
+        "z": -5.332723526700959,
+        "count_f": 73.0,
+        "count_m": 191.0
+      },
+      {
+        "token": "residency",
+        "z": -5.30356321651053,
+        "count_f": 95.0,
+        "count_m": 228.0
+      },
+      {
+        "token": "0",
+        "z": -5.256688321156855,
+        "count_f": 12.0,
+        "count_m": 77.0
+      },
+      {
+        "token": "plans",
+        "z": -5.242519691570743,
+        "count_f": 16.0,
+        "count_m": 84.0
+      },
+      {
+        "token": "medicare",
+        "z": -5.195708983773111,
+        "count_f": 11.0,
+        "count_m": 74.0
+      },
+      {
+        "token": "humana",
+        "z": -5.127336042662943,
+        "count_f": 35.0,
+        "count_m": 118.0
+      },
+      {
+        "token": "rating",
+        "z": -5.113020066459676,
+        "count_f": 21.0,
+        "count_m": 91.0
+      },
+      {
+        "token": "computer",
+        "z": -5.082340778900657,
+        "count_f": 53.0,
+        "count_m": 150.0
+      },
+      {
+        "token": "addition",
+        "z": -5.0259892614713,
+        "count_f": 47.0,
+        "count_m": 138.0
+      },
+      {
+        "token": "carriers",
+        "z": -4.999461978948451,
+        "count_f": 44.0,
+        "count_m": 132.0
+      },
+      {
+        "token": "bronze",
+        "z": -4.9833463046638915,
+        "count_f": 27.0,
+        "count_m": 100.0
+      },
+      {
+        "token": "multiple",
+        "z": -4.966120506132554,
+        "count_f": 23.0,
+        "count_m": 92.0
+      },
+      {
+        "token": "average",
+        "z": -4.8505566442573045,
+        "count_f": 31.0,
+        "count_m": 105.0
+      },
+      {
+        "token": ",",
+        "z": -4.729200748292208,
+        "count_f": 8080.0,
+        "count_m": 10843.0
+      },
+      {
+        "token": "stars",
+        "z": -4.655181995626783,
+        "count_f": 33.0,
+        "count_m": 105.0
+      },
+      {
+        "token": "including",
+        "z": -4.618723504158851,
+        "count_f": 231.0,
+        "count_m": 423.0
+      },
+      {
+        "token": "(",
+        "z": -4.198826971451385,
+        "count_f": 668.0,
+        "count_m": 1032.0
+      },
+      {
+        "token": "the",
+        "z": -4.086974716477082,
+        "count_f": 5192.0,
+        "count_m": 7009.0
+      },
+      {
+        "token": "analysis",
+        "z": -4.018313795097632,
+        "count_f": 25.0,
+        "count_m": 79.0
+      },
+      {
+        "token": "projects",
+        "z": -3.9692764661041933,
+        "count_f": 44.0,
+        "count_m": 112.0
+      },
+      {
+        "token": "architecture",
+        "z": -3.9674646213450817,
+        "count_f": 36.0,
+        "count_m": 98.0
+      },
+      {
+        "token": "plastic",
+        "z": -3.965296787933603,
+        "count_f": 5.0,
+        "count_m": 41.0
+      },
+      {
+        "token": ")",
+        "z": -3.9560990723688714,
+        "count_f": 673.0,
+        "count_m": 1027.0
+      },
+      {
+        "token": "networks",
+        "z": -3.9153337123461003,
+        "count_f": 9.0,
+        "count_m": 47.0
+      },
+      {
+        "token": "him",
+        "z": -3.907295646436516,
+        "count_f": 0.0,
+        "count_m": 167.0
+      },
+      {
+        "token": "electrical",
+        "z": -3.8538732565848046,
+        "count_f": 2.0,
+        "count_m": 40.0
+      },
+      {
+        "token": "several",
+        "z": -3.8439429741020295,
+        "count_f": 88.0,
+        "count_m": 182.0
+      },
+      {
+        "token": "out",
+        "z": -3.833433060649388,
+        "count_f": 80.0,
+        "count_m": 169.0
+      },
+      {
+        "token": "supports",
+        "z": -3.7820487656498316,
+        "count_f": 9.0,
+        "count_m": 45.0
+      },
+      {
+        "token": "music",
+        "z": -3.758049073879078,
+        "count_f": 76.0,
+        "count_m": 161.0
+      },
+      {
+        "token": "spine",
+        "z": -3.7167769202931478,
+        "count_f": 3.0,
+        "count_m": 35.0
+      },
+      {
+        "token": "patients",
+        "z": -3.711970794152976,
+        "count_f": 93.0,
+        "count_m": 187.0
+      },
+      {
+        "token": "films",
+        "z": -3.653232722703072,
+        "count_f": 11.0,
+        "count_m": 47.0
+      },
+      {
+        "token": "gave",
+        "z": -3.643208501606953,
+        "count_f": 9.0,
+        "count_m": 43.0
+      },
+      {
+        "token": "professor",
+        "z": -3.6205024333436566,
+        "count_f": 61.0,
+        "count_m": 134.0
+      }
+    ]
+  },
+  "projection": {
+    "female": [
+      {
+        "token": "she",
+        "projection": 5.722816656947151,
+        "count": 4268
+      },
+      {
+        "token": "him",
+        "projection": 4.28013591601667,
+        "count": 167
+      },
+      {
+        "token": "personal",
+        "projection": 3.909743614931375,
+        "count": 116
+      },
+      {
+        "token": "future",
+        "projection": 3.4286682984392907,
+        "count": 27
+      },
+      {
+        "token": "company",
+        "projection": 2.912529008444122,
+        "count": 75
+      },
+      {
+        "token": "the",
+        "projection": 2.5318124088808807,
+        "count": 12201
+      },
+      {
+        "token": "spanish",
+        "projection": 2.5304593748362705,
+        "count": 342
+      },
+      {
+        "token": "2010",
+        "projection": 2.5228960345721414,
+        "count": 162
+      },
+      {
+        "token": "working",
+        "projection": 2.444233072740814,
+        "count": 305
+      },
+      {
+        "token": "stories",
+        "projection": 2.4336326916220132,
+        "count": 67
+      },
+      {
+        "token": "emphasis",
+        "projection": 2.385074326238861,
+        "count": 57
+      },
+      {
+        "token": "members",
+        "projection": 2.35622635150048,
+        "count": 30
+      },
+      {
+        "token": "0",
+        "projection": 2.349355143655367,
+        "count": 89
+      },
+      {
+        "token": "can",
+        "projection": 2.3413308031259517,
+        "count": 227
+      },
+      {
+        "token": "written",
+        "projection": 2.32494143658381,
+        "count": 86
+      },
+      {
+        "token": "history",
+        "projection": 2.2821074370574657,
+        "count": 264
+      },
+      {
+        "token": "young",
+        "projection": 2.2514118423862333,
+        "count": 114
+      },
+      {
+        "token": "accounting",
+        "projection": 2.2475228652867005,
+        "count": 78
+      },
+      {
+        "token": "applications",
+        "projection": 2.2203415812762417,
+        "count": 64
+      },
+      {
+        "token": "inc",
+        "projection": 2.1932576806722173,
+        "count": 25
+      },
+      {
+        "token": "authored",
+        "projection": 2.186168391397663,
+        "count": 34
+      },
+      {
+        "token": "explore",
+        "projection": 2.184796545674816,
+        "count": 29
+      },
+      {
+        "token": "currently",
+        "projection": 2.147569357496147,
+        "count": 433
+      },
+      {
+        "token": "5",
+        "projection": 2.145816767942137,
+        "count": 305
+      },
+      {
+        "token": "practice",
+        "projection": 2.097289137485649,
+        "count": 671
+      },
+      {
+        "token": "open",
+        "projection": 2.039002721548865,
+        "count": 69
+      },
+      {
+        "token": "2",
+        "projection": 1.9957270253548487,
+        "count": 90
+      },
+      {
+        "token": "simulation",
+        "projection": 1.987578713927844,
+        "count": 20
+      },
+      {
+        "token": "cross",
+        "projection": 1.979569873186823,
+        "count": 314
+      },
+      {
+        "token": "insurance",
+        "projection": 1.9759284215562076,
+        "count": 334
+      },
+      {
+        "token": "member",
+        "projection": 1.972394878965115,
+        "count": 407
+      },
+      {
+        "token": "covering",
+        "projection": 1.9601157462418284,
+        "count": 29
+      },
+      {
+        "token": "age",
+        "projection": 1.9033764699825693,
+        "count": 88
+      },
+      {
+        "token": "e",
+        "projection": 1.8773210417763178,
+        "count": 86
+      },
+      {
+        "token": "prevention",
+        "projection": 1.8499151907026496,
+        "count": 42
+      },
+      {
+        "token": "prestigious",
+        "projection": 1.8491619859598039,
+        "count": 27
+      },
+      {
+        "token": "field",
+        "projection": 1.8461097080916624,
+        "count": 150
+      },
+      {
+        "token": "often",
+        "projection": 1.8229740559883312,
+        "count": 59
+      },
+      {
+        "token": "but",
+        "projection": 1.8177308487016963,
+        "count": 196
+      },
+      {
+        "token": "extensive",
+        "projection": 1.8145658067799706,
+        "count": 86
+      },
+      {
+        "token": "private",
+        "projection": 1.8131315274743847,
+        "count": 123
+      },
+      {
+        "token": "college",
+        "projection": 1.7864549669875438,
+        "count": 770
+      },
+      {
+        "token": "experience",
+        "projection": 1.7850643982403733,
+        "count": 538
+      },
+      {
+        "token": "focus",
+        "projection": 1.7819248605618685,
+        "count": 205
+      },
+      {
+        "token": "columbia",
+        "projection": 1.7815819723511523,
+        "count": 99
+      },
+      {
+        "token": "brain",
+        "projection": 1.7779548978084136,
+        "count": 46
+      },
+      {
+        "token": "st",
+        "projection": 1.7653834674898001,
+        "count": 183
+      },
+      {
+        "token": "under",
+        "projection": 1.7558838349357624,
+        "count": 86
+      },
+      {
+        "token": "advisor",
+        "projection": 1.7527910531326314,
+        "count": 25
+      },
+      {
+        "token": "production",
+        "projection": 1.7305264417160804,
+        "count": 56
+      }
+    ],
+    "male": [
+      {
+        "token": "he",
+        "projection": -6.307787676981361,
+        "count": 5405
+      },
+      {
+        "token": "sydney",
+        "projection": -3.2002797814168114,
+        "count": 21
+      },
+      {
+        "token": "her",
+        "projection": -3.1135710088282194,
+        "count": 2651
+      },
+      {
+        "token": "lives",
+        "projection": -3.0672824071003513,
+        "count": 88
+      },
+      {
+        "token": "crime",
+        "projection": -2.7262440072239866,
+        "count": 25
+      },
+      {
+        "token": "community",
+        "projection": -2.5952864289992847,
+        "count": 224
+      },
+      {
+        "token": "mathematical",
+        "projection": -2.4825449496519774,
+        "count": 23
+      },
+      {
+        "token": "technology",
+        "projection": -2.3519365676207706,
+        "count": 286
+      },
+      {
+        "token": "regulation",
+        "projection": -2.2667706597232034,
+        "count": 29
+      },
+      {
+        "token": "these",
+        "projection": -2.237511954368008,
+        "count": 118
+      },
+      {
+        "token": "1993",
+        "projection": -2.2270289761374404,
+        "count": 42
+      },
+      {
+        "token": "holds",
+        "projection": -2.2250186747094043,
+        "count": 280
+      },
+      {
+        "token": "life",
+        "projection": -2.2050474695640547,
+        "count": 230
+      },
+      {
+        "token": "english",
+        "projection": -2.1998161376972267,
+        "count": 428
+      },
+      {
+        "token": "associated",
+        "projection": -2.177823106185139,
+        "count": 59
+      },
+      {
+        "token": "their",
+        "projection": -2.163476248228739,
+        "count": 263
+      },
+      {
+        "token": "johns",
+        "projection": -2.1603756695902225,
+        "count": 38
+      },
+      {
+        "token": "artificial",
+        "projection": -2.0777174197591375,
+        "count": 34
+      },
+      {
+        "token": "service",
+        "projection": -2.0537262062280384,
+        "count": 107
+      },
+      {
+        "token": "and",
+        "projection": -2.0497189499668673,
+        "count": 16245
+      },
+      {
+        "token": "methods",
+        "projection": -2.039638901635762,
+        "count": 96
+      },
+      {
+        "token": "therapy",
+        "projection": -2.009137244096196,
+        "count": 111
+      },
+      {
+        "token": "more",
+        "projection": -2.001541271972888,
+        "count": 347
+      },
+      {
+        "token": "independent",
+        "projection": -1.9622910860991283,
+        "count": 46
+      },
+      {
+        "token": "mary",
+        "projection": -1.9262560576403582,
+        "count": 23
+      },
+      {
+        "token": "attending",
+        "projection": -1.8942425099409896,
+        "count": 37
+      },
+      {
+        "token": "assessment",
+        "projection": -1.8800604769472975,
+        "count": 59
+      },
+      {
+        "token": "appeals",
+        "projection": -1.873508854634212,
+        "count": 24
+      },
+      {
+        "token": "art",
+        "projection": -1.8732769699353002,
+        "count": 262
+      },
+      {
+        "token": "digital",
+        "projection": -1.8504248246867836,
+        "count": 86
+      },
+      {
+        "token": "cum",
+        "projection": -1.8140420231189276,
+        "count": 47
+      },
+      {
+        "token": "matters",
+        "projection": -1.809348951671386,
+        "count": 114
+      },
+      {
+        "token": "orthopedic",
+        "projection": -1.8069642346323538,
+        "count": 26
+      },
+      {
+        "token": "help",
+        "projection": -1.7697616920842683,
+        "count": 66
+      },
+      {
+        "token": "foreign",
+        "projection": -1.764925205919294,
+        "count": 46
+      },
+      {
+        "token": "dentist",
+        "projection": -1.7648814927815637,
+        "count": 77
+      },
+      {
+        "token": "committee",
+        "projection": -1.7642481086830641,
+        "count": 87
+      },
+      {
+        "token": "natural",
+        "projection": -1.7569646382328372,
+        "count": 88
+      },
+      {
+        "token": "patient",
+        "projection": -1.7424802192406796,
+        "count": 124
+      },
+      {
+        "token": "term",
+        "projection": -1.7312432391941204,
+        "count": 42
+      },
+      {
+        "token": "national",
+        "projection": -1.695426587193497,
+        "count": 307
+      },
+      {
+        "token": "case",
+        "projection": -1.6763888208578948,
+        "count": 37
+      },
+      {
+        "token": "provided",
+        "projection": -1.6703390255584507,
+        "count": 121
+      },
+      {
+        "token": "sustainability",
+        "projection": -1.6629782344938189,
+        "count": 21
+      },
+      {
+        "token": "reached",
+        "projection": -1.6624574656691133,
+        "count": 113
+      },
+      {
+        "token": "team",
+        "projection": -1.6468027609594538,
+        "count": 123
+      },
+      {
+        "token": "$",
+        "projection": -1.6425130665868741,
+        "count": 21
+      },
+      {
+        "token": "partial",
+        "projection": -1.6401956783269895,
+        "count": 50
+      },
+      {
+        "token": "surgery",
+        "projection": -1.6237635686176883,
+        "count": 389
+      },
+      {
+        "token": "implant",
+        "projection": -1.6193958211341866,
+        "count": 40
+      }
+    ]
+  },
+  "embedding_bias": {
+    "mean_abs_projection": 0.6940349543077432,
+    "max_abs_projection": 1.7648814927815637,
+    "n_words": 27.0
+  },
+  "overlap": [
+    {
+      "token": "0",
+      "log_odds_side": "male",
+      "projection_side": "female"
+    },
+    {
+      "token": "5",
+      "log_odds_side": "male",
+      "projection_side": "female"
+    },
+    {
+      "token": "cross",
+      "log_odds_side": "male",
+      "projection_side": "female"
+    },
+    {
+      "token": "english",
+      "log_odds_side": "female",
+      "projection_side": "male"
+    },
+    {
+      "token": "he",
+      "log_odds_side": "male",
+      "projection_side": "male"
+    },
+    {
+      "token": "her",
+      "log_odds_side": "female",
+      "projection_side": "male"
+    },
+    {
+      "token": "him",
+      "log_odds_side": "male",
+      "projection_side": "female"
+    },
+    {
+      "token": "insurance",
+      "log_odds_side": "male",
+      "projection_side": "female"
+    },
+    {
+      "token": "she",
+      "log_odds_side": "female",
+      "projection_side": "female"
+    },
+    {
+      "token": "spanish",
+      "log_odds_side": "female",
+      "projection_side": "female"
+    },
+    {
+      "token": "surgery",
+      "log_odds_side": "male",
+      "projection_side": "male"
+    },
+    {
+      "token": "the",
+      "log_odds_side": "male",
+      "projection_side": "female"
+    }
+  ],
+  "probe": {
+    "accuracy": 0.8874809934110491,
+    "auc": 0.9571794585473586,
+    "majority_baseline": 0.5392802838317283
+  },
+  "f1": 0.09142857142857143,
+  "eod_abs": 0.27586206896551724
+}

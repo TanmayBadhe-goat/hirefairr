@@ -1,0 +1,5 @@
+role: software_engineer
+variant: B3
+adv:
+  mode: eo
+  lambda_max: 1.0

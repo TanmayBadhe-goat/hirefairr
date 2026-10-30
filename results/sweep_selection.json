@@ -1,0 +1,26 @@
+{
+  "nurse": {
+    "lambda_max": 1.0,
+    "f1": 0.6523364485981309,
+    "eod_abs": 0.013771299967849093,
+    "best_sweep_f1": 0.6577946768060836,
+    "rule": "F1 within 0.03 of best 0.6578, then lowest |EOD|, ties to smaller lambda",
+    "n_eligible": 5
+  },
+  "software_engineer": {
+    "lambda_max": 3.0,
+    "f1": 0.32525951557093424,
+    "eod_abs": 0.05859969558599698,
+    "best_sweep_f1": 0.34805194805194806,
+    "rule": "F1 within 0.03 of best 0.3481, then lowest |EOD|, ties to smaller lambda",
+    "n_eligible": 5
+  },
+  "surgeon": {
+    "lambda_max": 3.0,
+    "f1": 0.47377938517179025,
+    "eod_abs": 0.2143835616438356,
+    "best_sweep_f1": 0.49814126394052044,
+    "rule": "F1 within 0.03 of best 0.4981, then lowest |EOD|, ties to smaller lambda",
+    "n_eligible": 5
+  }
+}

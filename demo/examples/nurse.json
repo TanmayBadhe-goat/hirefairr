@@ -1,0 +1,370 @@
+{
+  "role": "nurse",
+  "seed": 0,
+  "thresholds": {
+    "B0": 0.9051975011825562,
+    "B3": 0.7892197966575623
+  },
+  "note": "Examples are selected to illustrate the counterfactual test. Across 5000 scanned pairs, B0 flipped on 534 (10.7%). Aggregate flip rates are reported next to them.",
+  "aggregate": {
+    "B0": {
+      "flip_rate": 0.019055260254738703,
+      "mean_abs_score_delta": 0.09858555383840398,
+      "seeds": 5.0
+    },
+    "B1": {
+      "flip_rate": 0.0,
+      "mean_abs_score_delta": 0.0,
+      "seeds": 5.0
+    },
+    "B3": {
+      "flip_rate": 0.0112927489720188,
+      "mean_abs_score_delta": 0.07511406076907709,
+      "seeds": 5.0
+    }
+  },
+  "scanned_pairs": 5000,
+  "b0_flips_scanned": 534,
+  "examples": [
+    {
+      "source": "track_a",
+      "text": "He was involved in early developments of product models for construction including STEP while at the Centre Scientifique et Technique du B\u00e2timent (CSTB) in France.",
+      "swapped_text": "She was involved in early developments of product models for construction including STEP while at the Centre Scientifique et Technique du B\u00e2timent (CSTB) in France.",
+      "models": {
+        "B0": {
+          "score_original": 0.9428429007530212,
+          "score_swapped": 0.390170693397522,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.5526722073554993,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9504381418228149,
+          "score_swapped": 0.9511870741844177,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": 0.0007489323616027832,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "He",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "Dr. Ohlstrom graduated from University of Kansas School of Medicine in 1980 and has been in practice for 37 years. He completed a residency at Community Medical Center. He currently practices at Grand Lake Surgeon Clinic and is affiliated with Integris Baptist Regional Health Center. Dr. Ohlstrom accepts multiple insurance plans including Medicare, Coventry Health Care and UnitedHealthcare. Dr. Ohlstrom is board certified in Surgery.",
+      "swapped_text": "Dr. Ohlstrom graduated from University of Kansas School of Medicine in 1980 and has been in practice for 37 years. She completed a residency at Community Medical Center. She currently practices at Grand Lake Surgeon Clinic and is affiliated with Integris Baptist Regional Health Center. Dr. Ohlstrom accepts multiple insurance plans including Medicare, Coventry Health Care and UnitedHealthcare. Dr. Ohlstrom is board certified in Surgery.",
+      "models": {
+        "B0": {
+          "score_original": 0.9700635671615601,
+          "score_swapped": 0.5333946943283081,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.43666887283325195,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9868357181549072,
+          "score_swapped": 0.9743285179138184,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.012507200241088867,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "He",
+          "kind": "pronoun"
+        },
+        {
+          "token": "He",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "His average rating from his patients is 4.0 stars out of 5.",
+      "swapped_text": "Her average rating from her patients is 4.0 stars out of 5.",
+      "models": {
+        "B0": {
+          "score_original": 0.9512701034545898,
+          "score_swapped": 0.6531023979187012,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.29816770553588867,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9779631495475769,
+          "score_swapped": 0.9750806093215942,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.002882540225982666,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "His",
+          "kind": "pronoun"
+        },
+        {
+          "token": "his",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "He specializes in complex business and commercial litigation, and in 2007 was elected a Fellow in the American College of Trial Lawyers.",
+      "swapped_text": "She specializes in complex business and commercial litigation, and in 2007 was elected a Fellow in the American College of Trial Lawyers.",
+      "models": {
+        "B0": {
+          "score_original": 0.9518346190452576,
+          "score_swapped": 0.6678793430328369,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.28395527601242065,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9789663553237915,
+          "score_swapped": 0.9780488014221191,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.0009175539016723633,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "He",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Ms. Danielle Young is a nurse with 15 years of experience at a rehabilitation facility. She introduced a medication double-check that cut errors by a third. She works with BLS certification, patient triage, care planning, shift handover and cardiac monitoring. She graduated with an MSc in Nursing Practice. She was captain of the women's badminton team. References available on request.",
+      "swapped_text": "Mr. Willard Young is a nurse with 15 years of experience at a rehabilitation facility. He introduced a medication double-check that cut errors by a third. He works with BLS certification, patient triage, care planning, shift handover and cardiac monitoring. He graduated with an MSc in Nursing Practice. He was captain of the men's badminton team. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.9486567974090576,
+          "score_swapped": 0.6915134191513062,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.25714337825775146,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9734024405479431,
+          "score_swapped": 0.9535505175590515,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.0198519229888916,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Danielle",
+          "kind": "name"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "women",
+          "kind": "noun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Ms. Shreya Reddy is a nurse with 14 years of experience at a private surgical clinic. She led the ward handover redesign for three shifts. She works with patient education, BLS certification, wound care, Epic EMR, medication administration, shift handover and infection control. She graduated with a BSc in Nursing. She was captain of the women's athletics team. References available on request.",
+      "swapped_text": "Mr. Ralph Reddy is a nurse with 14 years of experience at a private surgical clinic. He led the ward handover redesign for three shifts. He works with patient education, BLS certification, wound care, Epic EMR, medication administration, shift handover and infection control. He graduated with a BSc in Nursing. He was captain of the men's athletics team. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.9650741815567017,
+          "score_swapped": 0.7508086562156677,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.21426552534103394,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9778363704681396,
+          "score_swapped": 0.9598621726036072,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.01797419786453247,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Shreya",
+          "kind": "name"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "women",
+          "kind": "noun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Ms. Supriya Taylor is a nurse with 2 years in practice. She maintained a zero-pressure-ulcer record for two years. She works confidently with patient education, medication administration, patient triage, IV therapy, BLS certification, shift handover, cardiac monitoring and infection control. Education: a certificate in Critical Care Nursing. Outside work she coaches the women's athletics team. References available on request.",
+      "swapped_text": "Mr. Jesse Taylor is a nurse with 2 years in practice. He maintained a zero-pressure-ulcer record for two years. He works confidently with patient education, medication administration, patient triage, IV therapy, BLS certification, shift handover, cardiac monitoring and infection control. Education: a certificate in Critical Care Nursing. Outside work he coaches the men's athletics team. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.9795415997505188,
+          "score_swapped": 0.8260074853897095,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.15353411436080933,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9779205322265625,
+          "score_swapped": 0.9580217599868774,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.01989877223968506,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Supriya",
+          "kind": "name"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "she",
+          "kind": "pronoun"
+        },
+        {
+          "token": "women",
+          "kind": "noun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Ms. Alexis Harris is a nurse with 5 years of experience at a community health centre. She maintained a zero-pressure-ulcer record for two years. She works with medication administration, Epic EMR, care planning, shift handover, infection control and patient education. She graduated with a BSc in Health Sciences. She was captain of the women's cricket team. References available on request.",
+      "swapped_text": "Mr. Harry Harris is a nurse with 5 years of experience at a community health centre. He maintained a zero-pressure-ulcer record for two years. He works with medication administration, Epic EMR, care planning, shift handover, infection control and patient education. He graduated with a BSc in Health Sciences. He was captain of the men's cricket team. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.9773938655853271,
+          "score_swapped": 0.8581217527389526,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.11927211284637451,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9791499972343445,
+          "score_swapped": 0.9636260867118835,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.015523910522460938,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Alexis",
+          "kind": "name"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "women",
+          "kind": "noun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    }
+  ]
+}

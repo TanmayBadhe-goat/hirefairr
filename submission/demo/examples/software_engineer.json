@@ -1,0 +1,370 @@
+{
+  "role": "software_engineer",
+  "seed": 0,
+  "thresholds": {
+    "B0": 0.5278095006942749,
+    "B3": 0.49334028363227844
+  },
+  "note": "Examples are selected to illustrate the counterfactual test. Across 5000 scanned pairs, B0 flipped on 351 (7.0%). Aggregate flip rates are reported next to them.",
+  "aggregate": {
+    "B0": {
+      "flip_rate": 0.019923495318379662,
+      "mean_abs_score_delta": 0.02494391431719322,
+      "seeds": 5.0
+    },
+    "B1": {
+      "flip_rate": 0.0,
+      "mean_abs_score_delta": 0.0,
+      "seeds": 5.0
+    },
+    "B3": {
+      "flip_rate": 0.015406757650912881,
+      "mean_abs_score_delta": 0.01670061119570438,
+      "seeds": 5.0
+    }
+  },
+  "scanned_pairs": 5000,
+  "b0_flips_scanned": 351,
+  "examples": [
+    {
+      "source": "track_a",
+      "text": "He is known as a defender and an advocate for the existence of his native language, Kapampangan.",
+      "swapped_text": "She is known as a defender and an advocate for the existence of her native language, Kapampangan.",
+      "models": {
+        "B0": {
+          "score_original": 0.5435850024223328,
+          "score_swapped": 0.5042564868927002,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.03932851552963257,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.505995512008667,
+          "score_swapped": 0.48640406131744385,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.019591450691223145,
+          "flipped": true
+        }
+      },
+      "cues": [
+        {
+          "token": "He",
+          "kind": "pronoun"
+        },
+        {
+          "token": "his",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "She received her M.Phil degree in Clinical Psychology from Calcutta University and holds a license from the Rehabilitation Council of India (RCI).",
+      "swapped_text": "He received his M.Phil degree in Clinical Psychology from Calcutta University and holds a license from the Rehabilitation Council of India (RCI).",
+      "models": {
+        "B0": {
+          "score_original": 0.5497284531593323,
+          "score_swapped": 0.5106197595596313,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.03910869359970093,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.5124142169952393,
+          "score_swapped": 0.49481695890426636,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.0175972580909729,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "her",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "As a former state and federal prosecutor she specialized in both violent and white-collar crime, securing significant narcotics trafficking, defense procurement and bank fraud convictions.",
+      "swapped_text": "As a former state and federal prosecutor he specialized in both violent and white-collar crime, securing significant narcotics trafficking, defense procurement and bank fraud convictions.",
+      "models": {
+        "B0": {
+          "score_original": 0.5336432456970215,
+          "score_swapped": 0.49694254994392395,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.036700695753097534,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.48385098576545715,
+          "score_swapped": 0.4648210108280182,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": -0.019029974937438965,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "she",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "Ms. Rourke practices medicine in Braintree, MA and specializes in Orthopaedic Surgery Of Spine. Ms. Rourke is affiliated with South Shore Hospital and Brigham & Womens Hospital.",
+      "swapped_text": "Mr. Rourke practices medicine in Braintree, MA and specializes in Orthopaedic Surgery Of Spine. Mr. Rourke is affiliated with South Shore Hospital and Brigham & Womens Hospital.",
+      "models": {
+        "B0": {
+          "score_original": 0.5583698749542236,
+          "score_swapped": 0.5217025876045227,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.03666728734970093,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.5093021988868713,
+          "score_swapped": 0.4902642071247101,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.019037991762161255,
+          "flipped": true
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Mrs. Vaishnavi Scott is a software engineer with 9 years in practice. She mentored four junior engineers through their first on-call rotation. She works confidently with Go, Python, distributed systems, API design, TypeScript, AWS and CI/CD pipelines. Education: a BSc in Computer Science. Outside work she coaches the women's cricket team. References available on request.",
+      "swapped_text": "Mr. Dwight Scott is a software engineer with 9 years in practice. He mentored four junior engineers through their first on-call rotation. He works confidently with Go, Python, distributed systems, API design, TypeScript, AWS and CI/CD pipelines. Education: a BSc in Computer Science. Outside work he coaches the men's cricket team. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.506793737411499,
+          "score_swapped": 0.5358322858810425,
+          "decision_original": 0,
+          "decision_swapped": 1,
+          "delta": 0.029038548469543457,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.467388778924942,
+          "score_swapped": 0.478627473115921,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.011238694190979004,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Vaishnavi",
+          "kind": "name"
+        },
+        {
+          "token": "Scott",
+          "kind": "name"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "she",
+          "kind": "pronoun"
+        },
+        {
+          "token": "women",
+          "kind": "noun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Ms. Julia Jackson is a software engineer with 5 years of experience at a mid-sized payments company. She shipped a search service handling four million queries a day. She works with distributed systems, CI/CD pipelines, React, AWS, API design and Python. She graduated with a BSc in Mathematics. She was captain of the women's rowing team. References available on request.",
+      "swapped_text": "Mr. Prashant Jackson is a software engineer with 5 years of experience at a mid-sized payments company. He shipped a search service handling four million queries a day. He works with distributed systems, CI/CD pipelines, React, AWS, API design and Python. He graduated with a BSc in Mathematics. He was captain of the men's rowing team. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.5044248104095459,
+          "score_swapped": 0.5310757756233215,
+          "decision_original": 0,
+          "decision_swapped": 1,
+          "delta": 0.026650965213775635,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.4672767221927643,
+          "score_swapped": 0.4745838940143585,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.007307171821594238,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Julia",
+          "kind": "name"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "women",
+          "kind": "noun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Ms. Lori Green is a software engineer with 18 years in practice. She shipped a search service handling four million queries a day. She works confidently with Kubernetes, Python, TypeScript, distributed systems, CI/CD pipelines and unit testing. Education: a BSc in Mathematics. Outside work she coaches the women's volleyball team. References available on request.",
+      "swapped_text": "Mr. Herman Green is a software engineer with 18 years in practice. He shipped a search service handling four million queries a day. He works confidently with Kubernetes, Python, TypeScript, distributed systems, CI/CD pipelines and unit testing. Education: a BSc in Mathematics. Outside work he coaches the men's volleyball team. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.503990888595581,
+          "score_swapped": 0.5299397706985474,
+          "decision_original": 0,
+          "decision_swapped": 1,
+          "delta": 0.02594888210296631,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.4648883044719696,
+          "score_swapped": 0.4761713147163391,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.011283010244369507,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Lori",
+          "kind": "name"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "she",
+          "kind": "pronoun"
+        },
+        {
+          "token": "women",
+          "kind": "noun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Ms. Alexa King is a software engineer with 10 years in practice. She cut checkout latency by 38 percent over two quarters. She works confidently with Java, CI/CD pipelines, Kubernetes, PostgreSQL, API design, React, Python and AWS. Education: a BEng in Information Technology. Outside work she coaches the women's debating team. References available on request.",
+      "swapped_text": "Mr. Barry King is a software engineer with 10 years in practice. He cut checkout latency by 38 percent over two quarters. He works confidently with Java, CI/CD pipelines, Kubernetes, PostgreSQL, API design, React, Python and AWS. Education: a BEng in Information Technology. Outside work he coaches the men's debating team. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.5043933987617493,
+          "score_swapped": 0.5300309658050537,
+          "decision_original": 0,
+          "decision_swapped": 1,
+          "delta": 0.025637567043304443,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.4637026786804199,
+          "score_swapped": 0.4751581847667694,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.011455506086349487,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Alexa",
+          "kind": "name"
+        },
+        {
+          "token": "King",
+          "kind": "noun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "she",
+          "kind": "pronoun"
+        },
+        {
+          "token": "women",
+          "kind": "noun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+data/raw/
+data/processed/
+data/processed_quick/
+data/quick/
+results_quick/
+*.egg-info/
+submission/code/

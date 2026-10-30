@@ -1,0 +1,8 @@
+# Compute profile used when the full 80k-row, 8-epoch grid does not fit the
+# available hardware. It only shrinks workloads; metric definitions, splits,
+# seeds and variants are unchanged.
+data:
+  max_train: 12000
+  max_eval: 10000
+train:
+  epochs: 5

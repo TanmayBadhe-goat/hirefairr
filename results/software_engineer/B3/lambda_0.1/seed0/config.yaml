@@ -1,0 +1,35 @@
+role: software_engineer
+variant: B3
+seed: 0
+data:
+  dataset: LabHC/bias_in_bios
+  max_train: 12000
+  max_eval: 10000
+  max_len: 128
+  vocab_size: 30000
+  min_freq: 3
+  split_seed: 42
+model:
+  emb_dim: 100
+  hidden: 128
+  dropout: 0.3
+  glove_path: null
+adv:
+  mode: eo
+  lambda_max: 0.1
+  schedule: ganin
+train:
+  lr: 0.001
+  weight_decay: 1.0e-05
+  batch: 128
+  epochs: 5
+  patience: 2
+  clip: 1.0
+  num_workers: 0
+  device: auto
+  amp: auto
+paths:
+  data_dir: data
+  results_dir: results
+quick: false
+tag: lambda_0.1

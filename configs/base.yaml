@@ -1,0 +1,39 @@
+# Defaults for every HireFair run. Role and variant files override these.
+role: software_engineer
+variant: B0
+seed: 0
+
+data:
+  dataset: LabHC/bias_in_bios
+  max_train: 80000      # capped, stratified by (occupation, gender)
+  max_eval: 20000       # val/test capped at 20,000 rows
+  max_len: 128
+  vocab_size: 30000
+  min_freq: 3
+  split_seed: 42
+
+model:
+  emb_dim: 100
+  hidden: 128
+  dropout: 0.3
+  glove_path: null
+
+adv:
+  mode: none
+  lambda_max: 1.0
+  schedule: ganin       # lambda_t = lambda_max * (2 / (1 + exp(-10 p)) - 1)
+
+train:
+  lr: 0.001
+  weight_decay: 0.00001
+  batch: 128
+  epochs: 8
+  patience: 2
+  clip: 1.0
+  num_workers: 0
+  device: auto
+  amp: auto
+
+paths:
+  data_dir: data
+  results_dir: results

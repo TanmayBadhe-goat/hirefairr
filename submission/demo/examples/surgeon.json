@@ -1,0 +1,321 @@
+{
+  "role": "surgeon",
+  "seed": 0,
+  "thresholds": {
+    "B0": 0.8770567178726196,
+    "B3": 0.8354091644287109
+  },
+  "note": "Examples are selected to illustrate the counterfactual test. Across 5000 scanned pairs, B0 flipped on 561 (11.2%). Aggregate flip rates are reported next to them.",
+  "aggregate": {
+    "B0": {
+      "flip_rate": 0.01807240998896794,
+      "mean_abs_score_delta": 0.0716086696531942,
+      "seeds": 5.0
+    },
+    "B1": {
+      "flip_rate": 0.0,
+      "mean_abs_score_delta": 0.0,
+      "seeds": 5.0
+    },
+    "B3": {
+      "flip_rate": 0.03559723095608786,
+      "mean_abs_score_delta": 0.044160392445178935,
+      "seeds": 5.0
+    }
+  },
+  "scanned_pairs": 5000,
+  "b0_flips_scanned": 561,
+  "examples": [
+    {
+      "source": "track_a",
+      "text": "His patients gave him an average rating of 4.0 out of 5 stars.",
+      "swapped_text": "Her patients gave her an average rating of 4.0 out of 5 stars.",
+      "models": {
+        "B0": {
+          "score_original": 0.9196704030036926,
+          "score_swapped": 0.8442121744155884,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.07545822858810425,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.9009082317352295,
+          "score_swapped": 0.8863736391067505,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.014534592628479004,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "His",
+          "kind": "pronoun"
+        },
+        {
+          "token": "him",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "Dr. Mohammadi-Aragh earned both her M.S. and B.S. in computer engineering from MSU, and her Ph.D. in engineering education from Virginia Tech. Her primary research focuses on the formation of engineers during their undergraduate degree program, and the use of computing to measure and support that formation. Dr. Mohammadi-Aragh has been recognized for her research with multiple awards including the 2013 ASEE Computers in Education Best Paper, the 2013 ASE ... (continued)",
+      "swapped_text": "Dr. Mohammadi-Aragh earned both his M.S. and B.S. in computer engineering from MSU, and his Ph.D. in engineering education from Winston Tech. His primary research focuses on the formation of engineers during their undergraduate degree program, and the use of computing to measure and support that formation. Dr. Mohammadi-Aragh has been recognized for his research with multiple awards including the 2013 ASEE Computers in Education Best Paper, the 2013 ASE ... (continued)",
+      "models": {
+        "B0": {
+          "score_original": 0.891778290271759,
+          "score_swapped": 0.8187477588653564,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.07303053140640259,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.7884640693664551,
+          "score_swapped": 0.777249813079834,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": -0.011214256286621094,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "her",
+          "kind": "pronoun"
+        },
+        {
+          "token": "her",
+          "kind": "pronoun"
+        },
+        {
+          "token": "Virginia",
+          "kind": "name"
+        },
+        {
+          "token": "Her",
+          "kind": "pronoun"
+        },
+        {
+          "token": "her",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "His research interests include: 1) developing novel nucleic acid technology for cancer diagnostics; 2) leveraging molecular phenotyping to identify and exploit therapeutic vulnerabilities in cancer.",
+      "swapped_text": "Her research interests include: 1) developing novel nucleic acid technology for cancer diagnostics; 2) leveraging molecular phenotyping to identify and exploit therapeutic vulnerabilities in cancer.",
+      "models": {
+        "B0": {
+          "score_original": 0.895799994468689,
+          "score_swapped": 0.8417021632194519,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.05409783124923706,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.8012743592262268,
+          "score_swapped": 0.7889143824577332,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": -0.012359976768493652,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "His",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "She takes a welcoming and compassionate approach to pediatric patient care, helping children and their parents understand the medical procedures involved in their care.",
+      "swapped_text": "He takes a welcoming and compassionate approach to pediatric patient care, helping children and their parents understand the medical procedures involved in their care.",
+      "models": {
+        "B0": {
+          "score_original": 0.9061195254325867,
+          "score_swapped": 0.8553233742713928,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.05079615116119385,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.8551014065742493,
+          "score_swapped": 0.8618228435516357,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": 0.006721436977386475,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "She",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_b",
+      "text": "Summary. Ms. Nora Jackson, surgeon, 5 years at a tertiary referral hospital. She supervised eight residents through their operative logbook. Key skills: audit, minimally invasive techniques, quality assurance, surgical oncology, teaching, pre-operative assessment and robotic-assisted surgery. She earned an MD in Surgery. She represents the medical education staff council. References available on request.",
+      "swapped_text": "Summary. Mr. Elmer Jackson, surgeon, 5 years at a tertiary referral hospital. He supervised eight residents through their operative logbook. Key skills: audit, minimally invasive techniques, quality assurance, surgical oncology, teaching, pre-operative assessment and robotic-assisted surgery. He earned an MD in Surgery. He represents the medical education staff council. References available on request.",
+      "models": {
+        "B0": {
+          "score_original": 0.011153682135045528,
+          "score_swapped": 0.03032791055738926,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.01917422842234373,
+          "flipped": false
+        },
+        "B3": {
+          "score_original": 0.0167461559176445,
+          "score_swapped": 0.03370518609881401,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.01695903018116951,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Nora",
+          "kind": "name"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        },
+        {
+          "token": "She",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "She has taught many courses on a variety of subjects in Japanese language, civilization and literature.",
+      "swapped_text": "He has taught many courses on a variety of subjects in Japanese language, civilization and literature.",
+      "models": {
+        "B0": {
+          "score_original": 0.9196892380714417,
+          "score_swapped": 0.8768763542175293,
+          "decision_original": 1,
+          "decision_swapped": 0,
+          "delta": -0.042812883853912354,
+          "flipped": true
+        },
+        "B3": {
+          "score_original": 0.8469110131263733,
+          "score_swapped": 0.8445270657539368,
+          "decision_original": 1,
+          "decision_swapped": 1,
+          "delta": -0.0023839473724365234,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "She",
+          "kind": "pronoun"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "With bachelor's and juris doctor degrees from the University of Missouri at Columbia, Komen's education and legal experience are impressive.",
+      "swapped_text": "With bachelor's and juris doctor degrees from the University of Missouri at Columbia, Komen's education and legal experience are impressive.",
+      "models": {
+        "B0": {
+          "score_original": 0.5462546944618225,
+          "score_swapped": 0.8682215213775635,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.32196682691574097,
+          "flipped": false
+        },
+        "B3": {
+          "score_original": 0.8019295930862427,
+          "score_swapped": 0.8166688084602356,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.01473921537399292,
+          "flipped": false
+        }
+      },
+      "cues": [],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    },
+    {
+      "source": "track_a",
+      "text": "Ms. Mitchell practices medicine in Castro Valley, CA and 1 other location and specializes in Family Medicine. Ms. Mitchell is affiliated with Eden Medical Center, San Ramon Regional Medical Center and Alta Bates Summit Medical Center. Ms. Mitchell speaks English, Spanish and Portuguese.",
+      "swapped_text": "Ms. Charu practices medicine in Castro Valley, CA and 1 other location and specializes in Family Medicine. Ms. Charu is affiliated with Eden Medical Center, San Ramon Regional Medical Center and Alta Bates Summit Medical Center. Ms. Charu speaks English, Spanish and Portuguese.",
+      "models": {
+        "B0": {
+          "score_original": 0.5737132430076599,
+          "score_swapped": 0.8415573835372925,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.26784414052963257,
+          "flipped": false
+        },
+        "B3": {
+          "score_original": 0.7860375642776489,
+          "score_swapped": 0.8036348819732666,
+          "decision_original": 0,
+          "decision_swapped": 0,
+          "delta": 0.017597317695617676,
+          "flipped": false
+        }
+      },
+      "cues": [
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Mitchell",
+          "kind": "name"
+        },
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Mitchell",
+          "kind": "name"
+        },
+        {
+          "token": "Ms.",
+          "kind": "honorific"
+        },
+        {
+          "token": "Mitchell",
+          "kind": "name"
+        }
+      ],
+      "selection_note": "selected to illustrate: largest B0 score change with |B3 delta| <= 0.02"
+    }
+  ]
+}

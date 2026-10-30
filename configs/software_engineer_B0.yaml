@@ -1,0 +1,5 @@
+role: software_engineer
+variant: B0
+adv:
+  mode: none
+  lambda_max: 1.0
